@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigmas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Enigmas</h1>
+        <a href="index.html" class="button">Voltar à Página Inicial</a>
+    </header>
+    <main>
+        <section id="enigmas-imagens">
+            <h2>Enigmas de Imagens</h2>
+            <div class="enigma">
+                <img src="porta.jpg" alt="Porta Trancada">
+                <p>Como você abriria esta porta sem chave?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, 'Você está em um sonho')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+            <div class="enigma">
+                <img src="labirinto.jpg" alt="Labirinto">
+                <p>Qual o caminho mais curto para sair do labirinto?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, 'A resposta está no ponto de partida, observe atentamente')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+            <div class="enigma">
+                <img src="relogio.jpg" alt="Relógio">
+                <p>Que horas são quando os ponteiros do relógio se sobrepõem exatamente?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, '12:00')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+            <div class="enigma">
+                <img src="ponte.jpg" alt="Ponte">
+                <p>Quatro pessoas precisam atravessar uma ponte à noite com apenas uma lanterna, e a ponte só aguenta duas pessoas ao mesmo tempo. Cada pessoa leva um tempo diferente para atravessar: 1 minuto, 2 minutos, 7 minutos e 10 minutos. Como todos podem atravessar em 17 minutos?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, '1 e 2 atravessam (2 minutos), 1 volta (3 minutos), 7 e 10 atravessam (13 minutos), 2 volta (15 minutos), 1 e 2 atravessam (17 minutos)')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+            <div class="enigma">
+                <img src="espelhos.jpg" alt="Espelhos">
+                <p>Você está em uma sala com dois espelhos opostos. Quantas reflexões você vê?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, 'Infinito')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+        </section>
+        <section id="enigmas-escritos">
+            <h2>Enigmas Escritos</h2>
+            <div class="enigma">
+                <p>Três prisioneiros estão em uma sala. Eles são informados que têm chapéus de duas cores: vermelhos ou azuis. Cada um pode ver os chapéus dos outros, mas não o próprio. Se algum prisioneiro adivinhar a cor do seu chapéu, todos serão libertados. Após um momento de silêncio, um prisioneiro adivinha corretamente a cor do seu chapéu. Como ele fez isso?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, 'O prisioneiro que adivinhou a cor do seu chapéu sabia que se os outros dois prisioneiros tivessem chapéus da mesma cor, ele teria um chapéu de cor diferente. Vendo que os chapéus dos outros eram diferentes, ele deduziu que seu chapéu era da mesma cor de um dos outros.')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+            <div class="enigma">
+                <p>Você tem uma caixa com 10 bolas vermelhas, 20 bolas azuis e 30 bolas verdes. Qual é o número mínimo de bolas que você precisa tirar da caixa para ter certeza de que tirou pelo menos duas bolas de cada cor?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, 'Você precisa tirar 48 bolas para garantir que você tem pelo menos duas bolas de cada cor.')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+            <div class="enigma">
+                <p>Dois pais e dois filhos entram em um restaurante e pedem três pratos de comida. Todos comem até ficarem satisfeitos. Como isso é possível?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, 'Eles são avô, pai e filho')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+            <div class="enigma">
+                <p>Eu sou alto quando sou jovem, e curto quando sou velho. O que sou eu?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, 'Uma vela')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+            <div class="enigma">
+                <p>O que você pode segurar na mão direita, mas nunca na mão esquerda?</p>
+                <input type="text" placeholder="Digite sua resposta">
+                <button onclick="verificarResposta(this, 'A mão esquerda')">Verificar Resposta</button>
+                <p class="feedback"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
